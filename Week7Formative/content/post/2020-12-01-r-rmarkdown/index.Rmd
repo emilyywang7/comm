@@ -1,0 +1,53 @@
+---
+title: "Week 7 - Population Size per Region and State"
+author: "Emily Wang"
+date: 2021-11-07
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(tidyverse)
+
+US_states77 = data.frame(state.x77) %>%
+  rownames_to_column(., var = "State") %>%
+  tibble(Region = state.region,
+         Division = state.division,
+         Longitude = state.center$x,
+         Latitude = state.center$y)
+
+```
+
+# Graph
+This is a bar graph that shows the population size per US region in 1975. The population sizes are arranged in descending order and offers a comparison between the sizes.
+
+```{r cars, echo=FALSE}
+US_states77 %>%
+  group_by(Region) %>%
+  summarise(Population = sum(Population)) %>%
+  ggplot() +
+  geom_col(aes(x=reorder(Region, -Population), y=Population)) +
+  scale_y_continuous(breaks = seq(from = 0, to = 70000, by = 10000))+
+  labs(x='Regions', 
+       y='Population size')+
+  ggtitle("Population size per US region in 1975")+
+  theme(plot.title = element_text(hjust = 0.5,face="bold"))
+
+
+```
+
+# Including Plots
+
+You can also embed plots. See Figure \@ref(fig:pie) for example:
+
+```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
+par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
+  col = c('#0292D8', '#F7EA39', '#C4B632'),
+  init.angle = -50, border = NA
+)
+```
+

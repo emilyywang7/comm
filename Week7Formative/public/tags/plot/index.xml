@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plot on Week 7 Formative</title>
+    <link>/tags/plot/</link>
+    <description>Recent content in plot on Week 7 Formative</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 7 - Population Size per Region and State</title>
+      <link>/2021/11/07/week-7-population-size-per-region-and-state/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/11/07/week-7-population-size-per-region-and-state/</guid>
+      <description>Graph This is a bar graph that shows the population size per US region in 1975. The population sizes are arranged in descending order and offers a comparison between the sizes.
+ Including Plots You can also embed plots. See Figure 1 for example:
+par(mar = c(0, 1, 0, 1)) pie( c(280, 60, 20), c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;), col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;), init.</description>
+    </item>
+    
+  </channel>
+</rss>

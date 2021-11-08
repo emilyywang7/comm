@@ -1,0 +1,33 @@
+---
+title: "Week 7 - Population Size per Region and State"
+author: "Emily Wang"
+date: 2021-11-07
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="graph" class="section level1">
+<h1>Graph</h1>
+<p>This is a bar graph that shows the population size per US region in 1975. The population sizes are arranged in descending order and offers a comparison between the sizes.</p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/cars-1.png" width="672" /></p>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span style="display:block;" id="fig:pie"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
